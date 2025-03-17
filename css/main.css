@@ -1,0 +1,429 @@
+:root {
+  --brand: #fbae42;
+  --sub: #2f824c;
+  --body: #516171;
+  --border: rgba(0,0,0,0.08);
+  --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+.read-more {
+  font-size: 1.2rem;
+  color: var(--brand);
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.read-more a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Poppins', cursive;
+}
+
+.read-more i {
+  margin-left: 10px;
+  font-size: 1rem;
+  transition: all 0.5s;
+}
+
+.read-more a:hover i {
+  transform: translateX(10px);
+  color: #268500;
+}
+.read-more:hover a{
+  color: #268500;
+}
+
+.read-more .bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 50px;
+  width: 10%;
+  height: 3px;
+  background-color: green;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #268500 74%);
+  transition: width 0.5s;
+}
+
+.read-more:hover .bg {
+  width: 40%;
+}
+/* ============ coursses start =============  */
+.courses-3 {
+  margin-top: -30px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden;
+  height: 100%; /* Ensures all elements in the row are the same height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Keeps content aligned neatly */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.courses-3:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+  box-shadow: 5px 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+.courses-3 img {
+  border-radius: 8px 8px 0 0; /* Image corners match container */
+  object-fit: cover;
+  height: 200px; /* Ensures images are the same height */
+  width: 100%;
+}
+
+.courses-3 h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #268500;
+}
+
+.courses-3 p {
+  font-size: 1rem;
+  line-height: 1.6;
+  flex-grow: 1; /* Ensures text takes up remaining space */
+}
+
+/* ========================  */
+.triangle-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Prevents the triangle from blocking any clicks or interactions */
+  overflow: hidden;
+  z-index: -1; /* Ensures the triangle stays behind all the content */
+}
+
+.animated-triangle {
+  position: absolute;
+  width: 100px; /* Adjust as needed */
+  height: auto;
+  animation: moveTriangle 15s linear infinite;
+}
+
+@keyframes moveTriangle {
+  0% {
+    transform: translate(-50px, -50px) rotate(0deg);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(90vw, 90vh) rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50px, -50px) rotate(360deg);
+    opacity: 0.5;
+  }
+}
+.read-more-3{
+  background-color: var(--sub);
+  color: white;
+  border-radius: 10px;
+  padding: 5px 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: medium;
+}
+
+/* =======================  */
+.why-choose-2 h2 {
+  color: var(--main-bg);
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.why-choose-2 {
+  padding: 50px 0;
+  background-color: #f7f7f7;
+}
+
+.why-item {
+  background-color: var(--sub);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.why-item.white-bg {
+  background-color: var(--white);
+}
+
+.why-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.why-choose-2 .icon-container {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+  transition: background-color 0.3s ease;
+}
+
+.why-choose-2 .rotate-icon {
+  transform: rotate(10deg);
+}
+
+.why-choose-2 .icon-container i {
+  font-size: 2rem;
+  color: var(--main-bg);
+}
+
+.why-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.why-item.white-bg h3 {
+  color: var(--main-bg);
+}
+
+.why-item p {
+  font-size: 0.9rem;
+  color: var(--white);
+}
+
+.why-item.white-bg p {
+  color: var(--main-bg);
+}
+
+@media (max-width: 768px) {
+  .why-choose-2 .col-md-3 {
+      flex-basis: 100%;
+  }
+}
+
+/* ================================================  */
+.header-3 {
+  /* font-size: 1.2rem; */
+  color: var(--brand);
+  /* margin-top: 10px; */
+  margin-bottom: 20px;
+  text-align: center; /* Center the header text */
+  position: relative;
+  display: inline-block; /* Allows the underline effect to stay with the text */
+}
+
+.header-3 .bg {
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Start at the center */
+  transform: translateX(-50%); /* Center the underline */
+  border-radius: 50px;
+  width: 15%; /* Initial width */
+  height: 3px;
+  background-color: green;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #268500 74%);
+  transition: width 0.5s ease;
+  margin-top: 10px;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .header-3 {
+    font-size: 1rem; /* Adjust font size on smaller screens */
+  }
+
+  .header-3 .bg {
+    width: 20%; /* Start with a wider underline on smaller screens */
+  }
+}
+/* =====================  */
+.art-of-vfx{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow:5px 6px 12px rgba(0, 0, 0, 0.2);;
+
+}
+.art-of-vfx img{
+  border-radius: 20px 20px 0px 0px;
+}
+.art-of-vfx h4{
+  color: var(--sub);
+  font-weight: bold;
+ border-bottom: 2px solid green;
+}
+.art-of-vfx:hover {
+  box-shadow: 8px 10px 18px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
+.art-of-vfx:hover img{
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+/* ==============  */
+/* Light background color for the container */
+.background-overlay-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  z-index: -1;
+  border-radius: 20px;
+}
+
+/* Random placement and animation for Font Awesome icons */
+.animated-icon {
+  position: absolute;
+  font-size: 3rem;
+  color: rgba(179, 146, 0, 0.4); /* Light color for subtle effect */
+  z-index: 0; /* Ensure it is below content */
+  animation: float 6s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  20% {
+      transform: translateY(-20px);
+  }
+  30%{
+    transform: rotate(40deg);
+  }
+}
+/* =================  */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+.btn-brand-33{
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  border-radius: 20px  0px;
+ 
+}
+/* ===================  */
+.home-3 {
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(255, 160, 82, 0.2); 
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 195, 83, 0.5);
+  margin: 10px;
+  position: relative; /* Use relative positioning */
+ 
+}
+
+
+
+.home-3 {
+  padding: 10px;
+  box-shadow: 5px 5px 10px grey;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 165, 0, 0.5);
+  margin: 5px; /* Reduce the margin to decrease space between containers */
+  position: relative;
+}
+
+.home-3 h3 {
+  padding: 10px 0;
+  font-weight: bold;
+  color: orange;
+}
+
+.home-3-2 {
+  padding: 20px; /* Added more padding for better spacing */
+  border-radius: 20px;
+  background-color: transparent;
+  margin: 10px auto; /* Center the container horizontally */
+  justify-content: center; /* Vertically centers the container */
+  align-items: center;
+  max-width: 80%; /* Control width for a more focused layout */
+}
+
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.call-now-btn, .get-quote-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+}
+
+.call-now-btn {
+  background-color: orange;
+  color: white;
+}
+
+.get-quote-btn {
+  background-color: grey;
+  color: white;
+}
+
+/* .get-quote-btn:hover {
+  background-color: var(--sub);
+  color: white;
+} */
+
+.call-now-btn i {
+  margin-right: 10px;
+}
+
+.get-quote-btn i {
+  margin-right: 10px; /* Add space for the icon */
+}
+
+/* Add the Font Awesome icon for 'Get a Quote' */
+/* .get-quote-btn::before {
+  content: "\f155";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+} */
+
+.fa-phone {
+  animation: phoneRing 2s infinite linear;
+}
+ 
+@keyframes phoneRing {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Call Now Button hover - background green */
+.call-now-btn:hover {
+  background-color: var(--sub);
+  color: white; /* Adjust text color if needed for contrast */
+  border-color: var(--sub); /* Optional if there's a border */
+}
+
+.get-quote-btn {
+  background-color: var(--sub);
+  color: white; /* Adjust text color if needed for contrast */
+  border-color: var(--sub); /* Optional if there's a border */
+}
+
+/* Enroll Now Button hover - background var(--brand) */
+.get-quote-btn:hover {
+  background-color: var(--brand);
+  color: white; /* Adjust text color if needed for contrast */
+  border-color: var(--brand); /* Optional if there's a border */
+}

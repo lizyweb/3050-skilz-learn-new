@@ -1,0 +1,217 @@
+:root {
+    --brand: #01b5fb;
+    --sub: #2f824c;
+    --body: #516171;
+    --border: rgba(0,0,0,0.08);
+    --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Path */
+.banner-area {
+    position: relative;
+    min-height: 300px;
+    color: #fff;
+    background: linear-gradient(rgba(71, 89, 117, 0.089), rgba(19, 57, 118, 0.65)), url("../img/image-1/path.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .banner-title {
+    color: #5a3d2b;
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: 900;
+    font-family: Patua One, sans-serif;
+  }
+  .banner-title-33 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: 900;
+    font-family: Aldrich, sans-serif;
+  }
+
+  
+  @media (max-width: 767px) {
+    .banner-title {
+      font-size: 48px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .banner-title {
+      font-size: 32px;
+    }
+  }
+  
+  .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 1;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  
+  .banner-heading {
+    text-align: center;
+  }
+  
+  .breadcrumb {
+    padding: 0;
+    background: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  
+  .breadcrumb li a,
+  .breadcrumb .breadcrumb-item,
+  .breadcrumb li a:focus {
+    color: #fff !important;
+    text-decoration: none;
+  }
+  
+  .breadcrumb li a:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    color: #fff;
+  }
+  /*path end*/
+  .design-h2 {
+    font-weight: 900;
+    color: var(--brand);
+  }
+  @media (max-width: 792px) {
+    .design-h2 {
+        font-size: 20px;
+    }
+  }
+  
+  
+  .text-center {
+    color: #fbae42;
+  
+  }
+  /*product start*/
+  
+  
+  .card-body{
+    max-height: 400px;
+  }
+  .product-img{
+    max-height: 400px;
+  }
+  
+  
+  .about-image {
+      height:357px;
+      -webkit-background-size:cover;
+      -moz-background-size:cover;
+      -o-background-size:cover;
+      background-size:cover;
+    background-position: center;
+  }
+  .color-bg {
+      background: var(--brand);
+  }
+  .color-bg h4{
+    color: white;
+  }
+  .color-bg h6, .color-bg p {
+      color: white;
+  }
+  .color-bg h6::after{
+      border-color: #fff;
+  }
+  .about-text {
+      padding:20px 50px 25px 50px;
+  }
+  .nopadding {
+      padding:0;
+  }
+  /*product end*/
+
+  /*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.services .service-item {
+    padding: 40px;
+    background: transparent;
+    height: 100%;
+  }
+  
+  .services .service-item .icon {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  .services .service-item .icon i {
+    color: var(--body);
+    font-size: 40px;
+    transition: ease-in-out 0.3s;
+    z-index: 2;
+    position: relative;
+    line-height: 1.8;
+  }
+  
+  .services .service-item .icon:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #f0f1f2;
+    border-radius: 50px;
+    z-index: 1;
+    top: 10px;
+    right: -15px;
+    transition: 0.3s;
+  }
+  
+  .services .service-item h3 {
+
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    padding-bottom: 8px;
+    font-size: 22px;
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 4px solid #ebebed; */
+    transition: 0.3s;
+  }
+  
+  .services .service-item p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+    color: black;
+  }
+  
+  .services .service-item .readmore {
+    margin-top: 15px;
+    display: inline-block;
+    color: var(--brand);
+  }
+  
+  .services .service-item:hover .icon:before {
+    background: var(--brand);
+  }
+/*   
+  .services .service-item:hover h3 {
+    border-color: var(--brand);
+  } */
+  
+  .section-bg {
+    background-color: #f5f6f7;
+  }
+  
